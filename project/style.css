@@ -1,0 +1,28 @@
+nav {
+    background-color: #3b5998;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+body {
+    background-color: antiquewhite;
+}

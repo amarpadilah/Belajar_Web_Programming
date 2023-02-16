@@ -1,0 +1,72 @@
+body {
+    background-color: aliceblue;
+}
+
+h1 {
+    text-align: center;
+}
+
+.color1 {
+    color: red;
+    /* dalam properti color ada 3 jenis valu yang bisa diberikan, yaitu: nama warnanya langsung(red, dll), hexadecimal(#ff0000, dll) dan rgb(red-green-blue) */
+}
+
+.color2 {
+    color: rgb(47, 0, 255);
+    /* dalam properti color ada 3 jenis valu yang bisa diberikan, yaitu: nama warnanya langsung(red, dll), hexadecimal(#ff0000, dll) dan rgb(red-green-blue) */
+}
+
+.textalign1 {
+    text-align: center;
+}
+
+.textalign2 {
+    text-align: justify;
+}
+
+.textalign3 {
+    text-align: right;
+}
+
+.textindent1 {
+    text-indent: 50px;
+    /* satuan value nya ada 2 yaitu px dan % */
+}
+
+.textdecoration1 {
+    text-decoration: underline;
+}
+
+.textdecoration2 {
+    text-decoration: line-through;
+}
+
+a {
+    text-decoration: none;
+}
+
+.texttransform1 {
+    text-transform: uppercase;
+}
+
+.texttransform2 {
+    text-transform: lowercase;
+}
+
+.texttransform3 {
+    text-transform: capitalize;
+}
+
+.letterspacing1 {
+    letter-spacing: 5px;
+}
+
+.wordspacing1 {
+    word-spacing: 55px;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

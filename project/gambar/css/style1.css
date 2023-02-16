@@ -1,0 +1,66 @@
+body {
+    background-color: rgb(33, 183, 194);
+}
+
+.container {
+    display: flex;
+}
+
+.card {
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 200px;
+    flex: 1;
+    transition: .3s all ease;
+    cursor: pointer;
+}
+
+#nier {
+    background-image: url(../../image/12.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#kaguya {
+    background-image: url(../../image/kaguya.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#zerotwo {
+    background-image: url(../../image/02.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bocchi {
+    background-image: url(../../image/bocchi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#rin {
+    background-image: url(../../image/rin.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card:hover {
+    flex: 1.5;
+    background-color: rgb(207, 207, 207);
+    height: 300px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+p {
+    margin-top: 130px;
+}

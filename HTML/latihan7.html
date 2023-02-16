@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: rgb(152, 193, 228);">
+    <h2 style="text-align: center;">Cara Menambahkan Audio</h2>
+    <hr>
+    <p>Audio juga bisa ditambakan kedalam isi dari HTML, kita pelajari caranya bagaimana!!</p>
+    <p>Sebelum adanya HTML 5, audio di HTML ditambahkan dengan program eksternal seperti flash player. Namun, kini HTML sudah punya tag sendiri yakni audio. Tag audio adalah tag untuk membuat audio player. langsung saja ke codingannya dan hasilnya.
+    </p>
+    <img src="gambar/audio.png" alt="gambar audio" width="340" height="200" style="display:block; margin:auto;">
+    <br>
+
+    <center>
+        <audio hidden autoplay loop><!-- khusus 3 atribut ini adalah untuk menambahkan background musik pada web-->
+            <source src="musik/inthestars.mp3" type="audio/mp3">silahkan refress
+        </audio>
+    </center>
+    <!-- ini adalah contoh denga file audio yang sudah ada difolder -->
+
+    <center>
+        <audio controls> <!-- kata "Controls" merupakan sebuah atribut dan bisa diganti dengan atribut lainnya, seperti autoplay, loop, mute"-->
+            <source src="https://github.com/petanikode/belajar-html/raw/master/audio/Ngoni.mp3" type="audio/mp3">silahkan refress
+        </audio>
+    </center>
+    <p>Ada beberapa atribut didalam tag audio, yaitu :</p>
+    <ol>
+        <li>Controls
+            <p>Atribut ini berfungsi untuk mengaktifkan tombol kontrol seperti tombol play, pause, stop, scroll, dan volume).</p>
+        </li>
+        <li>Autoplays
+            <p>Atribut ini berfungsi untuk memutar audio secara otomatis. Nilai yang bisa diberikan pada atribut ini adalah true dan false. Nilai true artinya kita akan memutar audio secara otomatis, dan false artinya audio tidak akan diputar secara otomatis.</p>
+            <!-- Catatan: Atribut ini mungkin saja tidak akan bekerja pada Google Chrome, karena ada perubahan policy (kebijakan) dalam memutar audio secara otomatis -->
+        </li>
+        <li>Loop
+            <p>Atribut loop berfungsi untuk mengulang-ulang pemutaran audio. Ini seperti repeat one. Nilai yang bisa diberikan adalah true dan false.</p>
+        </li>
+        <li>muted
+            <p>muted Atribut ini berfungsi untuk mensenyapkan audio. Nilai yang bisa diberikan adalah true dan false.</p>
+        </li>
+        <p><i>Catatan: Jika pada codingannya tidak dituliskan 'false' maka berarti nilai nya adalah 'true'.</i></p>
+    </ol>
+    <!-- ini adalah contoh audionya yang ada di suatu website lain yang terpisah, bisa menggunakan URL nya untuk terhubung -->
+    <hr>
+    <br>
+    <p>Silahkan Pilih Jenis Musik Kesukaan Kalian</p>
+    <ol>
+        <li>
+            <a href="musik/jepang.html">Jepang</a>
+        </li>
+        <li>
+            <a href="musik/barat.html">Barat</a>
+        </li>
+        <li>
+            <a href="musik/indo.html">Indonesia</a>
+        </li>
+    </ol>
+    <hr>
+    <p>bagaimana, sudah mengerti? kalo sudah silahkan lanjut ke
+        <a href="latihan8.html"><button>latihan8</button></a>
+    </p>
+</body>
+
+</html>

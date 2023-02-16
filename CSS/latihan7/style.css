@@ -1,0 +1,83 @@
+body {
+    background-color: aliceblue;
+}
+
+h1 {
+    text-align: center;
+}
+
+div {
+    text-align: center;
+}
+
+div a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* ini adalah contoh dari pseudo class yang berhubungan dengan link */
+
+.hello:link {
+    color: red;
+    text-decoration: none;
+    text-align: center;
+}
+
+.hello:hover {
+    font-size: 20px;
+    color: blueviolet;
+    transition: 0.3s;
+}
+
+.hello:active {
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+.hello:visited {
+    color: green;
+}
+
+
+/* ---------- */
+
+
+/* ini adalah contoh pseudo yang berhubungan dengan elemen */
+
+ul li:first-child a {
+    color: green;
+}
+
+ul li:last-child a {
+    color: rgb(17, 155, 235);
+}
+
+ul li:nth-child(3n) a {
+    color: rgb(218, 8, 8);
+}
+
+ul li:nth-child(even) a {
+    color: rgb(223, 22, 163);
+}
+
+ul li:nth-child(even) a:hover {
+    color: rgb(223, 220, 22);
+}
+
+
+/* --------- */
+
+
+/* ini adalah contoh pseudo yang berhubungan dengan elemen */
+
+p:nth-last-of-type(2) {
+    color: red;
+}
+
+p:last-of-type {
+    color: rgb(22, 154, 216);
+}
+
+
+/* --------- */

@@ -1,0 +1,38 @@
+body {
+    background-color: aliceblue;
+}
+
+h1 {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+div.footer {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div a {
+    text-decoration: none;
+}
+
+summary {
+    cursor: pointer;
+}
+
+
+/* ini adalah contohnya */
+
+
+/* div adalah parentnya dan tag a adalah childnya */
+
+div.contoh {
+    color: green;
+}
+
+a {
+    color: inherit;
+}
+
+
+/* maka warnanya akan berubah jadi hijau karena mnggunakan value inherit(turunan) */

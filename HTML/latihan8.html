@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        div h1 {
+            text-align: center;
+        }
+        
+        div p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(178, 218, 218);">
+
+    <header>
+        <h2 style="text-align: center;">Cara Menambahkan Video</h2>
+    </header>
+    <hr>
+
+    <p id="video">Bagaimana cara membuatnya?, Pahami dulu ini!!</p>
+    <p>Kita membutuhkan sebuah media player untuk menampilkan video di HTML. HTML sekarang punya tag baru untuk membuat media player, yakni tag " video ".
+    </p>
+
+    <img src="gambar/video.png" alt="" style="display: block;  width: 330px; margin: auto;">
+
+    <ul>
+        <li>
+            <a href="#video">cara menambahkan video</a>
+        </li>
+        <li>
+            <a href="#gif">cara menambahkan video sebagai GIF</a>
+        </li>
+        <li>
+            <a href="#yt">cara menambahkan video dari Youtube</a>
+        </li>
+    </ul>
+
+    <p>Jika tag video di buka pada browser yang tidak mendukungnya, maka teks browser tidak mendukung tag video akan ditampilkan. <br> Oke, langsung aja ke contohnya dibawah ini :</p>
+
+    <center>
+        <video controls>
+            <source src="video/websiteku_video_video-about.webm">browser tidak mendukung
+        </video>
+        <!-- jika videonya berada di website yang berbeda, maka kita harus mengisi atribut src dengan URL lengkap dari videonya. -->
+    </center>
+
+    <p>atribut untuk tag video, antara lain :</p>
+    <table border="" cellspacing="0" cellpadding="8">
+        <thead>
+            <th bgcolor="yellow">Nama Atribut</th>
+            <th bgcolor="yellow">Nilai</th>
+            <th bgcolor="yellow">Fungsi</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>autoplay</td>
+                <td>true/false</td>
+                <td>Agar video diputar otomatis</td>
+            </tr>
+            <tr>
+                <td>controls</td>
+                <td>true/false</td>
+                <td>AUntuk mengaktifkan control video player</td>
+            </tr>
+            <tr>
+                <td>loop</td>
+                <td>true/false</td>
+                <td>Untuk memutar video secara terus menerus</td>
+            </tr>
+            <tr>
+                <td>muted</td>
+                <td>true/false</td>
+                <td>Untuk menonaktifkan video</td>
+            </tr>
+            <tr>
+                <td>poster</td>
+                <td>image path</td>
+                <td>Untuk menentukan cover dari video</td>
+            </tr>
+            <tr>
+                <td>width & height</td>
+                <td>angka</td>
+                <td>Untuk menentukan tinggi dan lebar video</td>
+            </tr>
+            <tr>
+                <td>playsinline</td>
+                <td>true/false</td>
+                <td>Untuk memutar video secara 'inline'</td>
+            </tr>
+        </tbody>
+        <!-- Jika atribut bernilai triu, maka ia boleh ditulis namanya saja, jika false maka kata falsenya harus wajib ditulis -->
+    </table>
+    <hr>
+
+    <p id="gif">kita juga bisa menggunakan tag video untuk menambahkan GIF pada halaman HTML.</p>
+    <p>Caranya sama seperti menambahkan video biasa, tapi kita harus mengaktifkan beberapa atribut seperti autoplay, muted, playsinline dan loop.</p>
+
+    <p>Contoh Video sebagai gif</p>
+    <video autoplay loop muted playsinline>
+        <source src="video/websiteku_video_video-about.webm" type="video/webm">
+    </video>
+    <hr>
+
+    <p id="yt">cara menambahkan video dari youtube</p>
+    <p>Tag yang kita butuhkan untuk menambahkan video dari Youtube adalah "iframe". Tag ini sebenarnya berfungsi untuk menambahkan halaman lain dalam sebuah frame.</p>
+
+    <iframe src="https://www.youtube.com/embed/watch?v=-nNm4qA0VBU" frameborder="" width="335"></iframe>
+    <!-- Perhatikan URL yang digunakan pada atribut src, di sana kita menggunakan /embed/. Ini adalah halaman yang digunakan khusus untuk embed video dari Youtube -->
+
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+
+    <div>
+        <h1>Selamat anda Berhasil Belajar HTML Dasar</h1>
+        <p style="font-size: 50pt">&#128522;</p>
+        <h1>Selanjutnya Anda akan Belajar CSS Dasar, Semangat Ya</h1>
+        <p>
+            <a href="../CSS/latihan1/latihan1.html"><button>Lanjut CSS</button></a>
+        </p>
+    </div>
+
+    <footer style="text-align: center; ">
+        <a href="latihan7.html " type="video/webm "><button>kembali ke latihan7</button></a>
+    </footer>
+</body>
+
+</html>

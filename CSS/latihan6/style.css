@@ -1,0 +1,78 @@
+body {
+    background-color: aliceblue;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+/* ini adalah contoh selector elemen HTML  */
+
+h2,
+h3 {
+    color: rgb(255, 0, 0);
+}
+
+h3 {
+    font-style: italic;
+}
+
+
+/* ul li a {
+    color: orange;
+}
+
+ol li a {
+    color: rgb(245, 9, 9);
+} */
+
+
+/* -------- */
+
+
+/* ini adalah contoh selector id */
+
+#bullet a {
+    color: rgb(5, 182, 49);
+}
+
+#number a {
+    color: rgb(182, 5, 123);
+}
+
+
+/* -------- */
+
+
+/* ini adalah contoh selector class (class lebih bagus dari id)*/
+
+.paragraf1 {
+    color: rgb(12, 139, 129);
+}
+
+p.paragraf2 {
+    color: rgb(139, 12, 61);
+}
+
+a.belajar {
+    color: blueviolet;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-style: italic;
+}
+
+
+/* -------- */
+
+div {
+    text-align: center;
+}
+
+div a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}

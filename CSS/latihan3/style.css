@@ -1,0 +1,74 @@
+body {
+    background-color: aliceblue;
+}
+
+h1 {
+    text-align: center;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+#fontfamily1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#fontfamily2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#fontsize1 {
+    font-size: 30px;
+}
+
+#fontsize2 {
+    font-size: 150%;
+}
+
+#fontsize3 {
+    font-size: 1em;
+}
+
+.fontweight1 {
+    font-weight: bold;
+}
+
+.fontweight2 {
+    font-weight: normal;
+}
+
+.fontvariant1 {
+    font-variant: small-caps;
+}
+
+.fontstyle1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+.fontstyle2 {
+    font-family: sans-serif;
+    font-style: oblique;
+}
+
+.lineheight1 {
+    line-height: 50px;
+}
+
+.lineheight2 {
+    line-height: 1em;
+}
+
+.singkat {
+    font: italic normal bold 16px/18px helvetica, arial, sans-serif;
+    /* italic adalah font style, normal adalah font variant, bold adalah font height, 16px adalah font size, 18px adalah line height dan helvetica, arial, sans-serif adalah font familynya */
+}
+
+.pilih {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body bgcolor="white">
+    <h1 id="kembali" style="text-align: center">Cara Membuat Form</h1>
+    <hr />
+    <p>
+        Bagaimana cara membuat form itu? <br /> Sebelum kita membuat form nya kita harus tau apa itu FORM? <br />
+    </p>
+    <p>
+        <b>Form </b>merupakan bagian pada HTML yang dapat digunakan untuk membuat elemen Form pada halaman Web. Elemen form dapat terdiri dari cek box, radio button, menu,text box, text area, button dan lain-lain.
+    </p>
+    <hr />
+    <p>FORM yang ada pada html, yaitu :</p>
+    <br />
+
+    <label for="username">Username :</label>
+    <input type="text" id="username" />
+    <br /><br /><br />
+
+    <label for="password">password :</label>
+    <input type="password" id="password" />
+    <br /><br />
+
+    <label for="isian-email">Masukkan email:</label>
+    <input id="isian-email" type="email" value="amarpadilah12@gmail.com" />
+    <br /><br />
+
+    <label for="isian-usia">Masukkan usia anda!</label>
+    <input id="isian-usia" type="number" value="20" name="usia" min="18" max="60" />
+    <br /><br />
+
+    <label for="isian-1">Kelipatan 1000</label><br />
+    <input id="isian-1" type="number" step="1000" min="0" max="100000" />
+    <br /><br />
+
+    <label for="isian-url">Masukkan alamat ig anda!</label> <br />
+    <input id="isian-url" type="url" name="instagram" />
+    <button type="submit">submit</button>
+    <br /><br />
+
+    <label for="isian-telpon">Nomor Telepon</label> <br />
+    <input id="isian-telpon" type="tel" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}" />
+    <br /><br />
+    <!-- Pada contoh di atas, isian hanya akan dikatakan valid jika untuk format seperti ini:
+    1. 1234-1234-1234
+    2. 0837-3021-3222
+    dan seterusnya -->
+
+    <label for="isian-tanggal-lahir">Tanggal Lahir</label> <br />
+    <input id="isian-tanggal-lahir" name="tanggal_lahir" type="date" />
+    <br /><br />
+    <!-- Kita juga bisa memanfaatkan atribut min dan max untuk mengatur tanggal minimum dan tanggal maximum.
+    Nilai min dan max tersebut ditulis dengan format: YYYY-MM-dd.
+    Selain itu kita juga bisa mengatur tanggal menggunakan atribut value dengan format yang sama.-->
+
+    <label for="isian-waktu-bayar">Waktu Pembayaran</label> <br />
+    <input id="isian-waktu-bayar" name="waktu_pembayaran" type="datetime-local" />
+    <br /><br />
+    <!-- Dan untuk mengatur nilai default, kita bisa menggunakan atribut value dengan format: YYYY:MM:DDThh:mm (dalam waktu UTC). -->
+
+    <label for="isian-waktu">Waktu Pembayaran</label> <br />
+    <input id="isian-waktu" name="waktu_pembayaran" type="time" />
+    <br /><br />
+
+    <label for="isian-bulan">Bulan Lahir</label> <br />
+    <input id="isian-bulan" name="bulan_lahir" type="month" />
+    <br /><br />
+
+    <label for="isian-pekan">Pekan Lahir</label> <br />
+    <input id="isian-pekan" name="pekan_lahir" type="week" />
+    <br /><br />
+
+    <input type="radio" id="pria" name="kelamin" />
+    <label for="pria">pria</label>
+    <input type="radio" id="wanita" name="kelamin" />
+    <label for="wanita">wanita</label>
+    <br /><br />
+
+    <input type="checkbox" id="game" />
+    <label for="game">Mobile Game</label>
+    <input type="checkbox" id="voli" />
+    <label for="voli">Volly Ball</label>
+    <input type="checkbox" id="olahraga" />
+    <label for="olahraga">Olahraga</label>
+    <br /><br />
+
+    <label for="isian-foto">Upload Foto</label> <br />
+    <input id="isian-foto" name="foto" type="file" accept="image/png,image/jpg,image/jpeg" />
+    <br /><br />
+    <!-- Kita bisa menambahkan atribut accept untuk mengatur file apa saja yang boleh diupload. Misalkan kita ingin mengijinkan hanya file gambar seperti png, jpg atau jpeg, maka atribut accept akan terlihat seperti ini.
+    Contoh accept untuk file-file lain:
+    accept=".pdf" - file pdf
+    accept=".doc, .docx" - untuk file doc atau docx
+    accept=".ppt, .pptx" - untuk file ppt atau pptx
+    dan lain sebagainya.-->
+
+    <label for="isian-volume">Atur Volume</label> <br />
+    <input id="isian-volume" name="foto" type="range" min="20" />
+    <br /><br />
+    <!-- Rentang nilai default untuk tipe range adalah 0 sampai 100. Kita bisa menggantinya menggunakan atribut min dan max. -->
+
+    <label for="isian-warna">Atur Warna Latar</label> <br />
+    <input id="isian-warna" name="warna" type="color" />
+    <br /><br />
+
+    <label for="isian-pencarian">Cari sesuatu</label> <br />
+    <input id="isian-pencarian" name="keyword" type="search" />
+    <button>cari</button>
+    <br /><br />
+
+    <label for="nama">nama anda :</label><br />
+    <input type="text" name="nama" value="Amar" /><br />
+    <input type="submit" value="Simpan" />
+    <br /><br />
+
+    <form>
+        <label for="isian-nama">Nama</label> <br />
+        <input id="isian-nama" name="nama" type="text" value="amar" />
+        <input type="reset" value="Reset dari awal" />
+    </form>
+    <br /><br />
+
+    <label for="nama">apa hayo</label>
+    <input id="nama" type="hidden" name="sebuah_nama" value="Amar" />
+    <input type="submit" />
+    <p style="font-size: 20pt">&#128522;</p>
+    <br /><br />
+    <!-- Sesuai namanya, tipe input ini tidak akan menampilkan input apa pun pada halaman web. Akan tetapi, nama dan nilai dari kolom isian tersebut tetap akan dikirimkan ke server pada saat submit -->
+
+    <label for="merek ">Brand HP</label>
+    <select name="merek " id="merek ">
+      <option value="x ">Xiomi</option>
+      <option value="s " selected>Samsung</option>
+      <option value="o " disabled>Oppo</option>
+    </select>
+    <br /><br />
+
+    <label for="merek ">Brand HP</label><br />
+    <select size="4 " name="merek " id="merek ">
+      <option value="x ">Xiomi</option>
+      <option value="s ">Samsung</option>
+      <option value="o ">Oppo</option>
+      <option value="x ">Iphone</option>
+      <option value="s ">Nokia</option>
+      <option value="o ">Realme</option>
+    </select>
+    <br /><br />
+
+    <label for="merek ">Brand HP</label><br />
+    <select size="4 " name="merek " id="merek " multiple>
+      <option value="x ">Xiomi</option>
+      <option value="s ">Samsung</option>
+      <option value="o ">Oppo</option>
+      <option value="x ">Iphone</option>
+      <option value="s ">Nokia</option>
+      <option value="o ">Realme</option>
+    </select>
+    <br /><br />
+
+    <form>
+        <label for="nama ">Nama</label> <br />
+        <input type="text " id="nama " name="nama " value="Suparman " /> <br />
+
+        <label for="alamat ">Alamat</label> <br />
+        <textarea id="alamat " name="alamat ">
+Surabaya Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, corporis cupiditate itaque quo quidem sapiente sit ut. Architecto eaque vitae, placeat dolorum, ducimus obcaecati minima consectetur sapiente consequatur culpa earum!</textarea
+      >
+    </form>
+    <br /><br />
+
+    <form>
+      <label for="nama ">Nama</label> <br />
+      <input type="text " id="nama " name="nama " value="Amar Padilah " />
+      <br />
+
+      <label for="alamat ">Alamat</label> <br />
+      <textarea id="alamat " name="alamat " rows="5 " cols="30 ">
+Surabaya Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, corporis cupiditate itaque quo quidem sapiente sit ut. Architecto eaque vitae, placeat dolorum, ducimus obcaecati minima consectetur sapiente consequatur culpa earum!</textarea
+      >
+    </form>
+    <br /><br />
+
+    <button onclick="alert('Tombol ini diklik!')">Klik Saya!</button>
+    <!-- Button memiliki 2 buah tipe:
+    type="button"
+    dan type="submit"
+    Tombol dengan type="submit" akan dianggap sebagai pen-submit suatu form. Jika ia diklik, maka form yang ada bersangkutan akan tersubmit. Ada pun tombol dengan type="button", maka ia hanya dianggap tombol biasa tanpa tugas khusus. -->
+    <br /><br />
+
+    <form>
+      <fieldset>
+        <legend>Data Diri</legend>
+        <label for="nama">Nama</label><br />
+        <input id="nama" name="nama" /><br />
+        <label for="asal">Asal</label><br />
+        <input id="asal" name="asal" /><br />
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Blog & Sosmed</legend>
+        <label for="instagram">Instagram</label><br />
+        <input id="instagram" name="instagram" type="url" /><br />
+        <label for="facebook">Facebook</label><br />
+        <input id="facebook" name="facebook" type="url" /><br />
+        <label for="twitter">Twitter</label><br />
+        <input id="twitter" name="twitter" type="url" /><br />
+        <label for="Youtube">Youtube</label><br />
+        <input id="Youtube" name="Youtube" type="url" /><br />
+      </fieldset>
+    </form>
+    <br /><br />
+
+    <form>
+      <input list="nama-kota" />
+      <datalist id="nama-kota">
+        <option value="Surabaya"></option>
+        <option value="Jakarta"></option>
+        <option value="Makassar"></option>
+        <option value="Bekasi"></option>
+        <option value="Bandung"></option>
+        <option value="Semarang"></option>
+        <option value="Samarinda"></option>
+      </datalist>
+    </form>
+    <!-- Coba ketikkan huruf “b” pada input di atas, maka browser akan memberikan saran autocomplete dari data yang sudah kita definisikan dalam element <datalist>. -->
+
+    <p>pasti bakalan lupa, tapi gppkan masih bisa dilihat dan dipelajari lagi OKE. <br>
+    lanjut?<a href="latihan7.html"><button>latihan7</button></a>
+    </p>
+  </body>
+</html>

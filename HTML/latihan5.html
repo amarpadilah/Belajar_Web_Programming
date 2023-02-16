@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body style="background-color: aliceblue">
+    <h1 id="kembali" style="text-align: center">Cara Membuat Tabel</h1>
+    <hr />
+
+    <p>
+        bisa buat tabel gak?<br />nih gini caranya gw ajarin, tapi petama-tama lu harus ngerti konsep tabel dulu kayak baris, kolom, data didalamnya dan lainnya. <br />masa gak ngerti sih, kan sering liat tabel!!
+    </p>
+    <hr />
+
+    <p>Tabel itu ada 2 tipe, yaitu :</p>
+    <ol>
+        <li>
+            <a href="#tabelsimple">Tabel Simple</a>
+        </li>
+        <li>
+            <a href="#tabelcomplex">Tabel Complex</a>
+        </li>
+    </ol>
+    <p>
+        Banyak yang bisa diubah/edit pada tabel, tapi biasanya untuk itu pasti menggunakan CSS <br /> Contoh atributnya yaitu :
+    </p>
+    <ul>
+        <li>border</li>
+        <li>cellspacing</li>
+        <li>cellpadding</li>
+        <li><a href="#rowspan&colspan">colspan</a></li>
+        <ul>
+            <li>colspan adalah menggabungkan dua cells data atau lebih pada kolom</li>
+        </ul>
+        <li>
+            <a href="#rowspan&colspan">rowspan</a>
+        </li>
+        <ul>
+            <li>rowspan adalah menggabungkan dua cells data atau lebih pada baris</li>
+        </ul>
+        <li>dan lain-lain</li>
+    </ul>
+
+    <p>
+        Udah ngertikan? bisa lah kalo belajar dulu. <br />kalo udah ngerti lanjut ke
+        <a href="latihan6.html"><button>latihan 6</button></a>
+    </p>
+    atau <br /><a href="latihan4.html"><button>Kembali latihan 4</button></a>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+    <hr id="tabelsimple" />
+    <p>Nih Liat Tabel Simple!!</p>
+    <table border="1" cellspacing="0" cellpadding="10">
+        <tr>
+            <td>baris1, kolom1</td>
+            <td>baris1, kolom2</td>
+        </tr>
+        <tr>
+            <td>baris2, kolom1</td>
+            <td>baris2, kolom2</td>
+        </tr>
+    </table>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
+    />
+
+    <hr id="tabelcomplex" />
+    <p>Nah yang ini Tabel Complex</p>
+    <table style="text-align: center" border="" cellspacing="0" cellpadding="10">
+        <thead>
+            <th>NO</th>
+            <th>Nama</th>
+            <th>GENDER</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1</th>
+                <td>Amar Padilah</td>
+                <td>Pria</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>Citra Amelia</td>
+                <td>Wanita</td>
+            </tr>
+        </tbody>
+    </table>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
+    />
+
+    <hr id="rowspan&colspan" />
+    <p>Ini adalah contoh Rowspan dan Colspan</p>
+    <table border="" cellspacing="0" cellpadding="5">
+        <tr>
+            <td rowspan="3">contoh menggabungkan 3 rowspan(baris)</td>
+            <td colspan="2">contoh menggabungkan 2 colspan(kolom)</td>
+        </tr>
+        <tr>
+            <td>2,2</td>
+            <td>2,3</td>
+        </tr>
+        <tr>
+            <td>3,2</td>
+            <td>3,3</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <p>latihan 1</p>
+    <table border="" cellspacing="0" cellpadding="30">
+        <tr>
+            <td>1,1</td>
+            <td>1,2</td>
+            <td>1,3</td>
+            <td>1,4</td>
+        </tr>
+        <tr>
+            <td>2,1</td>
+            <td style="text-align: center;" colspan="2" rowspan="2">
+                <h1>?</h1>
+            </td>
+            <td>2,4</td>
+        </tr>
+        <tr>
+            <td>3,1</td>
+            <td>3,4</td>
+        </tr>
+        <tr>
+            <td>4,1</td>
+            <td>4,2</td>
+            <td>4,3</td>
+            <td>4,4</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <p>latihan 2</p>
+    <table style="text-align: center;" border="" cellspacing="0" cellpadding="5">
+        <tr>
+            <th rowspan="2">No</th>
+            <th rowspan="2">NIM</th>
+            <th rowspan="2">Nama</th>
+            <th colspan="3">Absensi</th>
+        </tr>
+        <tr>
+            <td>Hadir</td>
+            <td>Sakit</td>
+            <td>Izin</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>071401001</td>
+            <td>Ridayanti</td>
+            <td>20</td>
+            <td>0</td>
+            <th>0</th>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>071401001</td>
+            <td>Fika Amalia</td>
+            <td>18</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <p>latihan3</p>
+    <table style="text-align: center;" border="" cellspacing="0" cellpadding="10">
+        <tr>
+            <td>No</td>
+            <td>Nama</td>
+            <td>Hoby</td>
+        </tr>
+        <tr>
+            <td rowspan="2">1</td>
+            <td rowspan="2">Amar Padilah</td>
+            <td>Game Mobile</td>
+        </tr>
+        <tr>
+            <td>Volly ball</td>
+        </tr>
+    </table>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <center><a href="#kembali"><button>kembali ke atas</button></a></center>
+
+</body>
+
+</html>

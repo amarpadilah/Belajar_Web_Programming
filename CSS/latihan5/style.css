@@ -1,0 +1,57 @@
+body {
+    background-color: aliceblue;
+}
+
+h1 {
+    text-align: center;
+}
+
+div.color {
+    background-color: red;
+    width: 200px;
+    height: 100px;
+    /* ini contoh background-color */
+}
+
+div.image {
+    background-image: url(../img/siang.jpg);
+    width: 250px;
+    height: 150px;
+    /* ini contoh background-image */
+}
+
+div.position {
+    background-position: center right;
+    background-repeat: no-repeat;
+    width: 1000px;
+    height: 400px;
+    background-image: url(../img/img2-3.png);
+    background-color: aqua;
+    /* ini contoh background-position */
+    /* untuk value position sumbu y = top/center/bottom & sumbu x = left/center/right */
+}
+
+div.repeat {
+    background-repeat: repeat;
+    width: 1000px;
+    height: 400px;
+    background-image: url(../img/img2-3.png);
+    background-color: aqua;
+    /* ini contoh background-repeat */
+}
+
+div.gabungan {
+    background: grey url(../img/siang.jpg) no-repeat center;
+    width: 1000px;
+    height: 400px;
+    /* ini contoh background-repeat */
+}
+
+p {
+    text-align: center;
+}
+
+div.pilih {
+    display: flex;
+    justify-content: space-evenly;
+}
