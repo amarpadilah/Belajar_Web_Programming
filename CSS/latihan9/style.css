@@ -1,0 +1,35 @@
+body {
+    background-color: aliceblue;
+}
+
+ul#merek-hp li {
+    color: green;
+}
+
+ul#merek-hp li.hp-gw {
+    color: red;
+}
+
+
+/* ini adalah contoh dari specificity selector */
+
+details summary {
+    cursor: pointer;
+}
+
+img {
+    width: 340px;
+}
+
+div.footer {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div a {
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+}
